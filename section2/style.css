@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Raleway', sans-serif;
+}
+
+.divRight{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgAtle{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+.atletaContainer{
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    border-radius: 20px;
+    background-color: #b1b1b1;
+    margin-top: 20px;
+    width: 90%;
+    height: 100vh;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 50vw 5vw;
+    grid-template-areas: "rithg left"
+}

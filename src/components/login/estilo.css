@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 16px;
+    outline: none;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0 1 369px;
+    align-items: center;
+    height: 250px;
+    padding-top: 110px;
+    margin: 0 40px;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+.loginErro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0 1 369px;
+    align-items: center;
+    height: 250px;
+    padding-top: 110px;
+    margin: 0 40px;
+    animation-name: erro;
+    animation-duration: 0.4s;
+}
+.inputLogin{
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    height: 35px;
+    width: 100%; 
+    border: none;
+}
+
+.button{
+    height: 35px;
+    width: 60%;
+    background-color: #D0021B;
+    color: #C9AE14;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: tomato;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes erro {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-15%);
+    }
+    70% {
+      transform: translateX(15%);
+    }
+  }

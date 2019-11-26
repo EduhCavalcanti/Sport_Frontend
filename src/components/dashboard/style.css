@@ -1,0 +1,60 @@
+*{
+  outline: none;
+  text-decoration: none;
+}
+.tudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  background-image: url('../main/sport-fundo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90%;
+}
+
+.modalidades{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1000px;
+ 
+}
+
+.img{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  height: 100px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imgplus img {
+  
+  width: 40px;
+  height: 40px;
+
+}
+
+.p{
+
+  width: 100%;
+  background-color: rgba(104, 103, 103, 0.527);
+}
+.p p{
+  text-align: center;
+  margin: 4px 0;
+}

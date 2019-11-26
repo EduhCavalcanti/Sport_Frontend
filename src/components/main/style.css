@@ -1,0 +1,212 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Raleway', sans-serif;
+    font-size: 16px;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.tudoMain{
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    display: grid;
+    grid-template-areas: "divLeft divRight";
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    height: 90%;
+}
+.divLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+}
+.divRight{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    height: 100%;
+    background-image: url('./sport-fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.search{
+    padding: 5px;
+    margin-top: 20px;
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+}
+.nomeAtleta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #b1b1b1;
+    height: 60px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.atletaInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 10px;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #b1b1b1;
+}
+.dentroInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+form{
+    margin: 18px 0;
+}
+.inputEdit:invalid{
+    border-width: 1px 1px 1px 10px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0)rgb(191, 22, 80) rgb(202, 14, 14) rgb(247, 53, 53);
+}
+.imgFechar{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.inputEdit{
+    width: 230px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 15px 5px;
+}
+.inputEdit::placeholder{
+    color: rgba(128, 128, 128, 0.507);
+    padding: 10px;
+}
+.imgAtle2{
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+}
+.imgNome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btnForm{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(2, 2, 2, 0.685);
+    height: 30px;
+    width: 20%;
+    color: white;
+    cursor: pointer;
+}
+.nome{
+    text-align: center;
+    height: 30px;
+    margin-left: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 5px white;
+}
+.imgAtle{
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-left: 10px;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.categoria{
+    color: white;
+    text-align: center;
+}
+ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    margin: 5px 0;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-bottom: solid 1px white;
+    font-size: 14px;
+}
+
+.imgLi{
+    height: 75px;
+    width: 80px;
+    margin-left: 60px;
+    border-radius: 7px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+
+.img1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    height: 45px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .imgplus1 img {
+    padding-left: 5px;
+    width: 35px;
+    height: 30px;
+  }
+  
+.p{
+    width: 100%;
+    background-color: rgba(104, 103, 103, 0.527);
+}
+.p p{
+    text-align: center;
+    margin: 4px 0;
+}
+
+.imgEdit{
+    margin: 0 20px;
+    height: 30px;
+    width: 40px;
+}

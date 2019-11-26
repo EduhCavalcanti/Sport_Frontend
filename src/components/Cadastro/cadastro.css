@@ -1,0 +1,160 @@
+.supremo{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'img b c'
+                      'img e f'
+                      'g h i'
+                      'j k l'
+                      'm n o'
+                      'p q r'
+                      's t u';
+                      height: 90%;
+                      margin-bottom: 15px;
+}
+.boxtudo{
+  display: flex;
+  justify-content: space-around;    
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url('./ilha.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  font-size: 22px;
+  text-shadow: 0 0 10px gray;
+  
+}
+.boxdentro{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'a b' 
+                      'd b'
+                      'g h'
+                      'i j'
+                      't u'
+                      'z z'
+                      ;
+  justify-items: center;  
+  align-items: center;
+  height: 85%;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.445);
+  box-shadow: 0 0 15px black;
+  border-radius: 10px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.inputLogin2{
+  margin: 10px 0;
+  width: 350px;
+}
+/* .photo{
+  grid-area: b;
+} */
+.divinput {
+  display: flex;
+  flex-direction: column;  
+}
+.divinput label{ 
+  text-shadow: 0 0 5px rgba(141, 141, 141, 0.534);
+  color: rgb(82, 15, 23);
+  margin: 0 10px;
+  font-size: 14px;
+}
+.divinput input::placeholder{ 
+  font-size: 12px;
+}
+
+.divinput input{
+  box-shadow: 0 1px 3px black;
+}
+
+.boxdentro p {
+  
+  text-align: center;
+  color: red;
+  height: 18px;
+  width: 350px;
+}
+.buttonmenor{
+  grid-area: z;
+  width: 300px;
+}
+
+label#foto {
+  box-shadow: 0 1px 3px black;
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: white;
+  background-position: center;
+  margin-top: 15px;
+  height: 70%;
+  width: 310px;
+  background-size: contain;
+  background-repeat: no-repeat ;
+  cursor: pointer;
+  display: flex;
+  grid-area: b;
+  justify-content: center;
+  align-items: center;
+}
+
+label#foto input {
+  display: none;
+}
+
+label#foto.has-foto {
+  border: 5px solid white;
+}
+
+label#foto.has-foto img {
+  display: none;
+}
+
+.alterar{
+  display: flex;
+  flex-direction: column;
+  padding: 20px ;
+}
+
+.divnova{
+  margin: 5px 10px;
+}
+.inputAtleta{
+  width: 220px;
+}
+
+#foto2{
+  grid-area: img;
+  box-shadow: 0 1px 3px black;
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: white;
+  background-position: center;
+  margin: 5px;
+  width: 240px;
+  background-size: contain;
+  background-repeat: no-repeat ;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foto2 input {
+  display: none;
+}
+
+#foto2.has-foto {
+  border: 5px solid white;
+}
+
+#foto2.has-foto img {
+  display: none;
+}
