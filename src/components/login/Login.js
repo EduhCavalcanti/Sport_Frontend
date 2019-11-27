@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './estilo.css';
 import api from '../../services/api';
+import { toast } from 'react-toastify';
 
 export default function Login({ history }) {
   const [email, setEmail] = useState();
@@ -18,6 +19,7 @@ export default function Login({ history }) {
       await localStorage.setItem('@SportAtletas:token', token);
       return history.push('/dashboard')
     } catch (err) {
+      toast.error('Falha no login, verifique seus dados')
       console.log(err)
       setErro(true)
     }

@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import Route from './routes/Route';
+
 import Main from './components/main/Main';
 import Login from './components/login/Login';
 import CadastroAtle from './components/form/CadastroAtleta';
@@ -12,9 +14,9 @@ export default function src() {
       <Switch>
         <Route path="/cadastromodalidade" component={Cadastro} />
         <Route path="/" exact component={Login} />
-        <Route path="/main/:modalidade_id" component={Main} />
+        <Route path="/main/:modalidade_id" component={Main} isPrivate />
         <Route path="/cadastroatleta" component={CadastroAtle} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/dashboard" component={Dashboard} isPrivate />
       </Switch>
     </BrowserRouter>
   );

@@ -7,8 +7,8 @@ import fechar from '../../assets/icon-x.png';
 export default function ItemAtleta({ atleta }) {
   const [estrutura, setEstrutura] = useState(false);
 
-  function handleSubmit() {
-
+  function handleSubmit(data) {
+    console.tron.log(data)
   }
 
 
