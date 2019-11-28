@@ -1,55 +1,68 @@
 import React, { useState } from 'react';
+//Usado para disparar um action
+import { useDispatch } from 'react-redux';
 import './estilo.css';
+import { Form, Input } from '@rocketseat/unform'
 import api from '../../services/api';
 import { toast } from 'react-toastify';
+//Importando a action
+import { signInRequest } from '../../store/modules/auth/actions';
 
 export default function Login({ history }) {
-  const [email, setEmail] = useState();
-  const [senha, setSenha] = useState();
+  // const [email, setEmail] = useState();
+  // const [senha, setSenha] = useState();
   const [erro, setErro] = useState(false);
 
-  async function Logar(e) {
-    e.preventDefault()
-    try {
-      const response = await api.post('/adminSession', {
-        email,
-        senha,
-      })
-      const { token } = response.data;
-      await localStorage.setItem('@SportAtletas:token', token);
-      return history.push('/dashboard')
-    } catch (err) {
-      toast.error('Falha no login, verifique seus dados')
-      console.log(err)
-      setErro(true)
-    }
-  }
-  function loginHandler(e) {
-    setEmail(e.target.value)
+  // async function Logar(e) {
+  //   e.preventDefault()
+  //   try {
+  //     const response = await api.post('/adminSession', {
+  //       email,
+  //       senha,
+  //     })
+  //     const { token } = response.data;
+  //     await localStorage.setItem('@SportAtletas:token', token);
+  //     return history.push('/dashboard')
+  //   } catch (err) {
+  //     toast.error('Falha no login, verifique seus dados')
+  //     console.log(err)
+  //     setErro(true)
+  //   }
+  // }
+  // function loginHandler(e) {
+  //   setEmail(e.target.value)
+  // }
+
+  // function inputHandler(e) {
+  //   setSenha(e.target.value)
+  //   setErro(false)
+  // }
+  const dispatch = useDispatch();
+
+  function loginHandler({ email, senha }) {
+    // console.tron.log({ email, senha })
+    //Vai disparar a action 
+    dispatch(signInRequest({ email, senha }))
   }
 
-  function inputHandler(e) {
-    setSenha(e.target.value)
-    setErro(false)
-  }
   return (
-    <div className="box">
+    <Form onSubmit={loginHandler} className="box">
       <div className={erro ? "loginErro" : "login"}>
-        <input
+        <Input
           className=" inputLogin"
           type="email"
           placeholder="Digite seu Email"
-          onChange={loginHandler}
+          name='email'
         />
 
-        <input
+        <Input
           className="inputLogin"
           type="password"
           placeholder="Digite a senha"
-          onChange={inputHandler}
+          name='senha'
         />
-        <button className="button" onClick={Logar}>ENTRAR</button>
+        <button className="button" type='submit'>ENTRAR</button>
       </div>
-    </div>
+    </Form>
   );
 }

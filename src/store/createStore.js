@@ -9,4 +9,4 @@ export default (reducers, middleware) => {
     : applyMiddleware(...middleware)
 
   return createStore(reducers, enhancer)
-}
+};
