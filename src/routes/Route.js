@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-import teste from '../store/modules/auth/reduce';
+// import store from '../store'
 
 export default function RouteWrapper({
   component: Component,
   isPrivate = false,
   ...rest
 }) {
-  const signed = false//Teste padrão
+  const signed = false   //Teste padrão
   console.tron.log(signed)
 
   if (!signed && isPrivate) {

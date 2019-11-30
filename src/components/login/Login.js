@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux'
 //Usado para disparar um action
 import { useDispatch } from 'react-redux';
 import './estilo.css';
@@ -66,3 +67,4 @@ export default function Login({ history }) {
     </Form>
   );
 }
+

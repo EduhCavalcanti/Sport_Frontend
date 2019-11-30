@@ -5,6 +5,7 @@ const INITIAL_STATE = {
   signed: false,
   loading: false
 }
+
 //As informações do token e de user estão no 'action'
 export default function auth(state = INITIAL_STATE, action) {
   return produce(state, draft => {
