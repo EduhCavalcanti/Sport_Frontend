@@ -1,20 +1,20 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-// import store from '../store'
+import { useSelector } from 'react-redux'
 
 export default function RouteWrapper({
   component: Component,
   isPrivate = false,
   ...rest
 }) {
-  const signed = false   //Teste padrão
-  console.tron.log(signed)
+  const isAutentic = useSelector(state => state.auth.signed)  //Teste padrão
+  console.tron.log(isAutentic)
 
-  if (!signed && isPrivate) {
+  if (!isAutentic && isPrivate) {
     return <Redirect to="/" />
   }
-  if (signed && !isPrivate) {
+  if (isAutentic && !isPrivate) {
     return <Redirect to="/dashboard" />
   }
 
