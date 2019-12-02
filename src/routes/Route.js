@@ -8,8 +8,7 @@ export default function RouteWrapper({
   isPrivate = false,
   ...rest
 }) {
-  const isAutentic = useSelector(state => state.auth.signed)  //Teste padrão
-  console.tron.log(isAutentic)
+  const isAutentic = useSelector(state => state.auth.signed)
 
   if (!isAutentic && isPrivate) {
     return <Redirect to="/" />

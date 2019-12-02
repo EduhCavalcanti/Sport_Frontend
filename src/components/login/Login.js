@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux'
 //Usado para disparar um action
 import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux'
+
 import './estilo.css';
 import { Form, Input } from '@rocketseat/unform'
 import api from '../../services/api';
-import { toast } from 'react-toastify';
 //Importando a action
 import { signInRequest } from '../../store/modules/auth/actions';
 
@@ -25,7 +25,6 @@ export default function Login({ history }) {
   //     await localStorage.setItem('@SportAtletas:token', token);
   //     return history.push('/dashboard')
   //   } catch (err) {
-  //     toast.error('Falha no login, verifique seus dados')
   //     console.log(err)
   //     setErro(true)
   //   }
@@ -39,11 +38,13 @@ export default function Login({ history }) {
   //   setErro(false)
   // }
   const dispatch = useDispatch();
+  const loading = useSelector(state => state.auth.loading)
+
 
   function loginHandler({ email, senha }) {
-    // console.tron.log({ email, senha })
     //Vai disparar a action 
     dispatch(signInRequest({ email, senha }))
+
   }
 
   return (
@@ -62,7 +63,7 @@ export default function Login({ history }) {
           placeholder="Digite a senha"
           name='senha'
         />
-        <button className="button" type='submit'>ENTRAR</button>
+        <button className="button" type='submit'>{loading ? 'Logando...' : 'ENTRAR'}</button>
       </div>
     </Form>
   );

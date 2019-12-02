@@ -1,6 +1,7 @@
 import { takeLatest, call, put, all } from 'redux-saga/effects';
+import { toast } from 'react-toastify';
 import api from '../../../services/api';
-import { signInSuccess } from './actions';
+import { signInSuccess, signFailure } from './actions';
 
 export function* signIn({ payload }) {
   const { email, senha } = payload;
@@ -15,7 +16,10 @@ export function* signIn({ payload }) {
     //Se der tudo certo vai passar o token para a função signInSuccess
     yield put(signInSuccess(token, user));
   } catch (error) {
-    console.log(error)
+    toast.error('Falha no login, verifique seus dados')
+
+    yield put(signFailure())
+    console.tron.log(error, 'Algo deu errado!')
   }
 };
 //Toda vez que ouvir essa auth sign vai chama a function signIN a cima 

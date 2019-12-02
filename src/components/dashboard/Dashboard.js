@@ -22,7 +22,7 @@ export default function Dashboard({ history }) {
   }, []);
 
   function cadastrar() {
-    history.push('/cadastro')
+    history.push('/cadastromodalidade')
   }
 
   function entrar(id) {

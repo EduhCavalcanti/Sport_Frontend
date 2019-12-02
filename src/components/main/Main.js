@@ -32,7 +32,7 @@ export default function Main(props, { history }) {
         return atleta.nome.indexOf(pesquisa) !== -1;
     }) */
     function cadastrar() {
-        props.history.push('/formulario')
+        props.history.push('/cadastroatleta')
     }
 
     return (

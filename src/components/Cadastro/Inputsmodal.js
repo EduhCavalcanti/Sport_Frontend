@@ -55,8 +55,9 @@ export default function Inputsmodal({ history }) {
         photo_name: foto
       })
 
-      const { token } = response.data;
-      await localStorage.setItem('@SportAtletas:token', token);
+      /* const { token } = response.data;
+      await localStorage.setItem('@SportAtletas:token', token); */
+
       history.push('/dashboard')
     } catch (err) {
       console.log(err)

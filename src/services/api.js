@@ -6,7 +6,9 @@ const api = (
 
 api.interceptors.request.use(async config => {
     try {
-        const token = await localStorage.getItem('@SportAtletas:token')
+        const local = await JSON.parse(await localStorage.getItem('persist:Sport'))
+        const { token } = await JSON.parse(local.auth)
+
         if (token) {
             config.headers.Authorization = `Bearer ${token}`
         }

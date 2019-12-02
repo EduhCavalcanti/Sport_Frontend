@@ -12,10 +12,10 @@ export default function src() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/cadastromodalidade" component={Cadastro} />
+        <Route path="/cadastromodalidade" component={Cadastro} isPrivate />
         <Route path="/" exact component={Login} />
         <Route path="/main/:modalidade_id" component={Main} isPrivate />
-        <Route path="/cadastroatleta" component={CadastroAtle} />
+        <Route path="/cadastroatleta" component={CadastroAtle} isPrivate />
         <Route path="/dashboard" component={Dashboard} isPrivate />
       </Switch>
     </BrowserRouter>

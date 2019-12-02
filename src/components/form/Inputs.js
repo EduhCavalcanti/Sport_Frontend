@@ -2,7 +2,6 @@ import React, { useState, useMemo, useEffect } from 'react';
 import api from '../../services/api';
 import camera from './../Cadastro/camera.svg'
 
-
 export default function Inputs({ history }) {
   const [nome, setNome] = useState();
   const [pai, setPai] = useState();
@@ -239,7 +238,7 @@ export default function Inputs({ history }) {
           <input onChange={numeroHandler} className="inputLogin inputAtleta" type="text" id="numero" />
         </div>
       </div>
-      <button className="button buttonmenor" onClick={Enviar}>ENTRAR</button>
+      <button className="button buttonmenor" onClick={Enviar}>CADASTRAR</button>
 
     </>
   );
