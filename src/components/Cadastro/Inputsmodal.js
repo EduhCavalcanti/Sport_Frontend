@@ -44,7 +44,7 @@ export default function Inputsmodal({ history }) {
     data.append('cpf', cpf);
 
     try {
-      const response = await api.post('/adminfoto', data, {
+      await api.post('/adminfoto', data, {
         nome,
         email,
         senha,
