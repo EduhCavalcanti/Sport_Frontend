@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 //Usado para disparar um action
 import { useDispatch } from 'react-redux';
 //Usado para selecionar um estado do redux
@@ -6,14 +6,14 @@ import { useSelector } from 'react-redux'
 
 import './estilo.css';
 import { Form, Input } from '@rocketseat/unform'
-import api from '../../services/api';
+// import api from '../../services/api';
 //Importando a action
 import { signInRequest } from '../../store/modules/auth/actions';
 
 export default function Login({ history }) {
   // const [email, setEmail] = useState();
   // const [senha, setSenha] = useState();
-  const [erro, setErro] = useState(false);
+  // const [erro, setErro] = useState(false);
 
   // async function Logar(e) {
   //   e.preventDefault()
@@ -49,24 +49,26 @@ export default function Login({ history }) {
   }
 
   return (
-    <Form onSubmit={loginHandler} className="box">
-      <div className={erro ? "loginErro" : "login"}>
-        <Input
-          className=" inputLogin"
-          type="email"
-          placeholder="Digite seu Email"
-          name='email'
-        />
+    <div className='box'>
+      <Form onSubmit={loginHandler}>
+        <div className="login">
+          <Input
+            className=" inputLogin"
+            type="email"
+            placeholder="Digite seu Email"
+            name='email'
+          />
 
-        <Input
-          className="inputLogin"
-          type="password"
-          placeholder="Digite a senha"
-          name='senha'
-        />
-        <button className="button" type='submit'>{loading ? 'Logando...' : 'ENTRAR'}</button>
-      </div>
-    </Form>
+          <Input
+            className="inputLogin"
+            type="password"
+            placeholder="Digite a senha"
+            name='senha'
+          />
+          <button className="button" type='submit'>{loading ? 'Logando...' : 'ENTRAR'}</button>
+        </div>
+      </Form>
+    </div>
   );
 }
 

@@ -5,6 +5,7 @@
     font-family: 'Raleway', sans-serif; 
     font-size: 16px;
     outline: none;
+    
 }
 
 .box{
@@ -26,10 +27,10 @@
     flex: 0 1 369px;
     align-items: center;
     height: 250px;
+    width: 300px;
     padding-top: 110px;
     margin: 0 40px;
-    animation-name: fade;
-    animation-duration: 1s;
+
 }
 .loginErro{
     display: flex;
@@ -67,25 +68,3 @@
     cursor: pointer;
     transition: 0.5s;
 }
-
-@keyframes fade{
-    from{
-        opacity: 0;
-        transform: scale(0.9);
-    }to{
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes erro {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-    35% {
-      transform: translateX(-15%);
-    }
-    70% {
-      transform: translateX(15%);
-    }
-  }

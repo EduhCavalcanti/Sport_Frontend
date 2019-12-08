@@ -16,7 +16,6 @@ export default function Header({ history }) {
   function handlerout(){
     localStorage.removeItem('persist:Sport');
     dispatch(singOut());
-    history.push('/');
   };
 
   return (

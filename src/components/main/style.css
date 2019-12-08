@@ -210,3 +210,11 @@ li{
     height: 30px;
     width: 40px;
 }
+
+.formedit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+    width: 700px;
+    padding-left: 15px;
+}

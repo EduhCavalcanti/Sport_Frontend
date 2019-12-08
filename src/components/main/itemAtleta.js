@@ -29,46 +29,65 @@ export default function ItemAtleta({ atleta }) {
           <div className="dentroInfo">
             <img className="imgAtle2" src={atleta.url} />
 
-            <Form initialData={atleta} onSubmit={handleSubmit}>
+            <Form initialData={atleta} onSubmit={handleSubmit} className="formedit">
 
-              <label htmlFor="nome">Nome</label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="nome" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="pai" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="mae" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="nacionalidade" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="categoria" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="natural" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="rua" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="bairro" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="cidade" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="estado" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="cep" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nome">Nome</label>
+              </label>
+              <label htmlFor="nome">Nome
               <Input className="inputEdit" name="fone" type="text" placeholder="Digite nome" required />
-              <label htmlFor="nascimento">nascimento</label>
+              </label>
+              <label htmlFor="nascimento">nascimento
               <Input className="inputEdit" name="data_nasc" placeholder="Digite nome" required />
-              <label htmlFor="email">email</label>
+              </label>
+              <label htmlFor="email">email
               <Input className="inputEdit" name="email" placeholder="Digite nome" required />
-              <label htmlFor="cpf">cpf</label>
+              </label>
+              <label htmlFor="cpf">cpf
               <Input className="inputEdit" name="cpf" placeholder="Digite nome" required />
-              <label htmlFor="rg">Rg</label>
+              </label>
+              <label htmlFor="rg">Rg
               <Input className="inputEdit" name="rg" placeholder="Digite nome" required />
-              <label htmlFor="escolaridade">escolaridade</label>
+              </label>
+              <label htmlFor="escolaridade">escolaridade
               <Input className="inputEdit" name="escolaridade" placeholder="Digite nome" required />
-              <label htmlFor="n">numero</label>
+              </label>
+              <label htmlFor="n">numero
               <Input className="inputEdit" name="n" placeholder="Digite nome" required />
+              </label>
 
               <button className="btnForm" type="submit">Atualizar dados</button>
+
             </Form>
           </div>
 
