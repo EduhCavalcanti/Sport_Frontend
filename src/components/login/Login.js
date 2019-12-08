@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 //Usado para disparar um action
 import { useDispatch } from 'react-redux';
+//Usado para selecionar um estado do redux
 import { useSelector } from 'react-redux'
 
 import './estilo.css';
