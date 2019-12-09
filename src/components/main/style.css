@@ -89,10 +89,11 @@ form{
 }
 .inputEdit{
     width: 230px;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     border: none;
     margin: 15px 5px;
+    font-size: 0.8em;
 }
 .inputEdit::placeholder{
     color: rgba(128, 128, 128, 0.507);
@@ -109,6 +110,7 @@ form{
     align-items: center;
 }
 .btnForm{
+    grid-area: s;
     border: none;
     border-radius: 10px;
     background-color: rgba(2, 2, 2, 0.685);
@@ -213,8 +215,16 @@ li{
 
 .formedit{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid red;
-    width: 700px;
-    padding-left: 15px;
+    grid-template-areas: 'area area1 area2 '
+                        'a b c'
+                        'd f g'
+                        'h j i'
+                        'k l m'
+                        'n o p'
+                        's s s'  ;
+    width: 800px;
+}
+
+label{
+    white-space: wrap;
 }

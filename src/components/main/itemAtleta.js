@@ -31,40 +31,43 @@ export default function ItemAtleta({ atleta }) {
 
             <Form initialData={atleta} onSubmit={handleSubmit} className="formedit">
 
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Nome do atleta
               <Input className="inputEdit" name="nome" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Nome do pai
               <Input className="inputEdit" name="pai" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Nome da mãe
               <Input className="inputEdit" name="mae" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Nacionalidade
               <Input className="inputEdit" name="nacionalidade" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Categoria
               <Input className="inputEdit" name="categoria" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Natural
               <Input className="inputEdit" name="natural" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Rua
               <Input className="inputEdit" name="rua" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="n">Numero (Complemento)
+              <Input className="inputEdit" name="n" placeholder="Digite nome" required />
+              </label>
+              <label htmlFor="nome">Bairro
               <Input className="inputEdit" name="bairro" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Cidade
               <Input className="inputEdit" name="cidade" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Estado
               <Input className="inputEdit" name="estado" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Cep
               <Input className="inputEdit" name="cep" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nome">Nome
+              <label htmlFor="nome">Fone
               <Input className="inputEdit" name="fone" type="text" placeholder="Digite nome" required />
               </label>
               <label htmlFor="nascimento">nascimento
@@ -73,18 +76,16 @@ export default function ItemAtleta({ atleta }) {
               <label htmlFor="email">email
               <Input className="inputEdit" name="email" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="cpf">cpf
+              <label htmlFor="cpf"> Indentificação CPF
               <Input className="inputEdit" name="cpf" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="rg">Rg
+              <label htmlFor="rg">Indentificação RG
               <Input className="inputEdit" name="rg" placeholder="Digite nome" required />
               </label>
               <label htmlFor="escolaridade">escolaridade
               <Input className="inputEdit" name="escolaridade" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="n">numero
-              <Input className="inputEdit" name="n" placeholder="Digite nome" required />
-              </label>
+
 
               <button className="btnForm" type="submit">Atualizar dados</button>
 
