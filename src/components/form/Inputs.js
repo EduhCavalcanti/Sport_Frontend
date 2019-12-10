@@ -185,7 +185,7 @@ export default function Inputs({ history }) {
           <label className='formLabel' htmlFor="nascimento">nascimento</label>
           <input onChange={nascimentoHandler}
             className="inputLogin inputAtleta"
-            type="date"
+            type="text"
             id="data_nasc"
           />
         </div>

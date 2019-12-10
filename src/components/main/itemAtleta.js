@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import edit from '../../assets/edit.png';
-import { Form, Input, FileInput } from '@rocketseat/unform';
+import { Form, Input } from '@rocketseat/unform';
 import fechar from '../../assets/icon-x.png';
 
 
@@ -70,10 +70,10 @@ export default function ItemAtleta({ atleta }) {
               <label htmlFor="nome">Fone
               <Input className="inputEdit" name="fone" type="text" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="nascimento">nascimento
+              <label htmlFor="nascimento">Nascimento
               <Input className="inputEdit" name="data_nasc" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="email">email
+              <label htmlFor="email">Email
               <Input className="inputEdit" name="email" placeholder="Digite nome" required />
               </label>
               <label htmlFor="cpf"> Indentificação CPF
@@ -82,7 +82,7 @@ export default function ItemAtleta({ atleta }) {
               <label htmlFor="rg">Indentificação RG
               <Input className="inputEdit" name="rg" placeholder="Digite nome" required />
               </label>
-              <label htmlFor="escolaridade">escolaridade
+              <label htmlFor="escolaridade">Escolaridade
               <Input className="inputEdit" name="escolaridade" placeholder="Digite nome" required />
               </label>
 

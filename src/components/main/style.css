@@ -47,6 +47,11 @@ section{
     border-radius: 10px;
     border: none;
 }
+.teste{
+    margin-top: 7px;
+    text-align: center;
+    color: white;
+}
 .nomeAtleta{
     display: flex;
     flex-direction: row;
@@ -118,6 +123,8 @@ form{
     width: 20%;
     color: white;
     cursor: pointer;
+    margin-left: 300px;
+    margin-top: 10px;
 }
 .nome{
     text-align: center;

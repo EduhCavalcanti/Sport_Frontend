@@ -47,10 +47,15 @@ export default function Main(props, { history }) {
                         <h1 className="categoria">{modalidade.modalidade}</h1>
                         <ul>
                             <li className='imgLi' style={{ backgroundImage: `url(${modalidade.url})` }}></li>
+                            <p className="teste">Nome</p>
                             <li>{modalidade.nome}</li>
+                            <p className="teste">Email</p>
                             <li>{modalidade.email}</li>
+                            <p className="teste">Fone</p>
                             <li>{modalidade.fone}</li>
+                            <p className="teste">Cpf</p>
                             <li>{modalidade.cpf}</li>
+                            <p className="teste">Rg</p>
                             <li>{modalidade.rg}</li>
 
                         </ul>
