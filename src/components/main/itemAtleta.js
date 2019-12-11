@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import edit from '../../assets/edit.png';
 import { Form, Input } from '@rocketseat/unform';
 import fechar from '../../assets/icon-x.png';
+import { updateProfileRequest } from '../../store/modules/user/actions'
 
 
 export default function ItemAtleta({ atleta }) {
   const [estrutura, setEstrutura] = useState(false);
+  const dispatch = useDispatch();
 
   function handleSubmit(data) {
-    console.tron.log(data)
+    dispatch(updateProfileRequest(data, atleta.id))
+
   }
 
 
