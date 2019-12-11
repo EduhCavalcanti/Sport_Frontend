@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import edit from '../../assets/edit.png';
 import { Form, Input } from '@rocketseat/unform';
 import fechar from '../../assets/icon-x.png';
+import AvatarInput from '../AvatarInput/index';
 import { updateProfileRequest } from '../../store/modules/user/actions'
 
 
@@ -31,7 +32,8 @@ export default function ItemAtleta({ atleta }) {
 
         <div className="atletaInfo">
           <div className="dentroInfo">
-            <img className="imgAtle2" src={atleta.url} />
+            {/* <img className="imgAtle2" src={atleta.url} /> */}
+            <AvatarInput atleta={atleta} name="avatar_id" />
 
             <Form initialData={atleta} onSubmit={handleSubmit} className="formedit">
 

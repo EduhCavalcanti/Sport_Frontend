@@ -20,12 +20,11 @@ export default function Main(props, { history }) {
                 const response = await api.get(`/atletas/${props.match.params.modalidade_id}/modalidades`);
                 setAtletas(response.data.atletas);
                 setModalidade(response.data)
-
             } catch (err) {
                 console.log(err)
             }
         } getAtletas()
-        /* console.log("chamou") */
+
     }, [])
 
     /* const atletasFiltrados = atletlas.filter((atleta) => {

@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import api from '../../services/api';
-import camera from './../Cadastro/camera.svg'
+import camera from './../Cadastro/camera.svg';
+import { toast } from 'react-toastify';
 
 export default function Inputs({ history }) {
   const [nome, setNome] = useState();
@@ -99,7 +100,7 @@ export default function Inputs({ history }) {
       })
       history.push(`/main/${modalidade}`)
     } catch (err) {
-      console.log(err, 'deu merda')
+      toast.error("Algo deu errado com seu cadastro")
     }
 
   }
